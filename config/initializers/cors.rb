@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:3001' # this is called whitelisting; '*' does not restrict anyone from using the API
+    origins 'example.com' # this is called whitelisting; '*' does not restrict anyone from using the API
 
     resource '*',
       headers: :any,
